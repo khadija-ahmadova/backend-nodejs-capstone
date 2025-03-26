@@ -3,6 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const pinoLogger = require('./logger')
 const path = require('path')
+const { loadData } = require("./util/import-mongo/index");
 
 const connectToDatabase = require('./models/db')
 
